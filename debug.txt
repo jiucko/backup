@@ -1,0 +1,92 @@
+1.启动浏览器,打开目标网页
+2.点击run..《模拟发送run消息》这部分用python写比较舒服
+3.svn资源更新到固定版本
+4.拷贝目标文件
+
+几个关键问题..怎么知道命令执行完了？
+
+
+另一个需要手动设置打boudle和打一个ios版本..试试可不可以自动做 计划表之类的
+打开xcode工程run到手机
+
+开机密码123456@a
+
+vpn.ztgame.com
+TJ23
+正式版 /home/ztgame/banben
+0
+
+李伟 11:51
+su xiaolin 
+password : 123@ztgame 
+测试版 xiaolin 123@ztgame   /home/xiaolin/banben/
+./autostart
+
+
+https://vpn.ztgame.com <https://vpn.ztgame.com/> 
+
+
+ 测试 
+
+/home/xiaolin/banben/release/sql/install.sql
+
+/home/xiaolin/banben/release/sql/update.sql
+
+重新连接数据库：
+1.vim config.xml
+2.mysql -h172.16.155.34 -uztgame -pirjryni51axR2oWJ
+
+
+tail -f ~/log/scenesserver.log | grep XXX
+
+make ctags
+
+查看core文件
+ls -l core.*
+gdb -c core.15401 --se bin/SceneServer
+
+消息在common/Cmd/branch0 下面
+
+代码对其
+v =
+
+改编译环境
+vi ~/.bashrc
+
+//脚本
+grep lua ~/log/scenescript.log
+
+//编译第三方库 当thirdpart被修改后
+
+到指定路径
+cd ./thirdpart/src/fir/
+make clean
+make install -j10
+
+//消息客户端直接到session
+common/Cmd/branch0/to_session_msg 在这里手动添加
+//调试 rm -rf common/Cmd/branch0/cmd_id.h
+//make clean
+//make cmd_id
+
+如果忘了上一步并且已提交
+
+再次手动添加到to_session_msg
+会出现消息号重复
+手动修改重复的消息好
+
+
+更改数据库 更改sql/update.sql
+
+//打表
+build_lua_cfg.bat
+只提交已经勾选的
+
+TimeTick
+
+将新的消息处理添加到SessionServer 添加命令派发类
+cmd_handle_manager.add_handle(FIR_NEW SocialCmdHandle())
+
+并且有个init在SessionService
+
+

@@ -1,0 +1,44 @@
+1.查看运行的服务器 ps -x
+2.调试某个服务器 gdb 某进程 进程ID ?
+3.打断点到具体的函数  b 文件名：行号；
+
+
+4.搜索某文件名
+  find . -name Help.java 
+5.
+  # grep -r ‘energywise’ * 
+
+6.Linux 下svn恢复到某一版本  
+
+7. make -j15//十五个核编译 会快一些
+8. ./update_res all //更新资源
+
+方法1： 用svn merge
+ 1) 先 svn up，保证更新到最新的版本，如20；
+ 2) 然后用 svn log ，查看历史修改，找出要恢复的版本，如10 。如果想要更详细的了解情况，可以使用svn diff -r 10:20 [文件或目录];
+ 3) 回滚到版本号10：svn merge -r 20:10 [文件或目录]，注意版本号之间的顺序，这个叫反向合并；
+ 4) 查看当前工作版本中的文件，如test.cpp和版本号10中文件的差别：svn diff -r 10 test.cpp， 有差别则手动改之；
+ 5) 若无差别，则提交：svn ci -m“back to r 10，xxxxx” [文件或目录]。这时svn库中会生成新的版本，如21。
+方法2: 用svn up
+ 前2步如方法1，然后直接 svn up -r 10。当前的工作版本就是版本10了。但是注意，这时svn库中会并不会生成新的版本，下次在本地svn up之后，还是会回到之前的版本。
+
+
+9.ctr+G?
+
+10.kill process 
+$ kill -s 9 pID
+
+11. 回退所有
+svn revert -R .
+
+
+rm -rf /var/log/httpd/access
+将会删除/var/log/httpd/access目录以及其下所有文件、文件夹
+
+rm -f /var/log/httpd/access.log
+
+
+svn add
+svn del xxx --force
+makdir 
+rm

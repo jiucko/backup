@@ -1,0 +1,37 @@
+添加本地编译环境 bash_profile
+WALLE_ENV_2= '-Werror -D_DEBUG_YTL'
+exportWALLE_ENV_2
+
+vim 配置 vimrc
+set number
+set completeopt=longest,menu
+set laststatus=2
+set paste
+
+./findexp
+#!/bin/bash
+
+line=$2
+then 
+     LINE="-wn"
+	 elif ["all" == "$2"]
+     then0
+	     LINE=""
+		 else
+		 LINE='-wn'$2
+		 fi
+		 find . -iname \*.[ch] -exec grep $LINE -n --color -H $1 \ {\} \;
+		 find . -iname \*.cpp -exec grep $LINE -n --color -H $1 \ {\} \;
+		 find . -iname \*.lua -exec grep $LINE -n --color -H $1 \ {\} \;
+		 find . -iname \*.cxx -exec grep $LINE -n --color -H $1 \ {\} \;
+		 
+
+__________________________________________________________________________
+change.sh
+#!/bin/bash
+#查看修改
+echo "####################################################################"
+echo "svn ci"
+svn st -q | grep -E "\.cpp|\.h|\.lua" awk '{printf $2 ""}' && echo
+echo "####################################################################"
+svn st -q | grep -E "\.cpp|\.h|\.lua" 
