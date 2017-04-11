@@ -1,38 +1,38 @@
-1.Æô¶¯ä¯ÀÀÆ÷,´ò¿ªÄ¿±êÍøÒ³
-2.µã»÷run..¡¶Ä£Äâ·¢ËÍrunÏûÏ¢¡·Õâ²¿·ÖÓÃpythonĞ´±È½ÏÊæ·ş
-3.svn×ÊÔ´¸üĞÂµ½¹Ì¶¨°æ±¾
-4.¿½±´Ä¿±êÎÄ¼ş
+1.å¯åŠ¨æµè§ˆå™¨,æ‰“å¼€ç›®æ ‡ç½‘é¡µ
+2.ç‚¹å‡»run..ã€Šæ¨¡æ‹Ÿå‘é€runæ¶ˆæ¯ã€‹è¿™éƒ¨åˆ†ç”¨pythonå†™æ¯”è¾ƒèˆ’æœ
+3.svnèµ„æºæ›´æ–°åˆ°å›ºå®šç‰ˆæœ¬
+4.æ‹·è´ç›®æ ‡æ–‡ä»¶
 
-¼¸¸ö¹Ø¼üÎÊÌâ..ÔõÃ´ÖªµÀÃüÁîÖ´ĞĞÍêÁË£¿
+å‡ ä¸ªå…³é”®é—®é¢˜..æ€ä¹ˆçŸ¥é“å‘½ä»¤æ‰§è¡Œå®Œäº†ï¼Ÿ
 
 
-ÁíÒ»¸öĞèÒªÊÖ¶¯ÉèÖÃ´òboudleºÍ´òÒ»¸öios°æ±¾..ÊÔÊÔ¿É²»¿ÉÒÔ×Ô¶¯×ö ¼Æ»®±íÖ®ÀàµÄ
-´ò¿ªxcode¹¤³Ìrunµ½ÊÖ»ú
+å¦ä¸€ä¸ªéœ€è¦æ‰‹åŠ¨è®¾ç½®æ‰“boudleå’Œæ‰“ä¸€ä¸ªiosç‰ˆæœ¬..è¯•è¯•å¯ä¸å¯ä»¥è‡ªåŠ¨åš è®¡åˆ’è¡¨ä¹‹ç±»çš„
+æ‰“å¼€xcodeå·¥ç¨‹runåˆ°æ‰‹æœº
 
-¿ª»úÃÜÂë123456@a
+å¼€æœºå¯†ç 123456@a
 
 vpn.ztgame.com
 TJ23
-ÕıÊ½°æ /home/ztgame/banben
+æ­£å¼ç‰ˆ /home/ztgame/banben
 0
 
-ÀîÎ° 11:51
+
 su xiaolin 
 password : 123@ztgame 
-²âÊÔ°æ xiaolin 123@ztgame   /home/xiaolin/banben/
+æµ‹è¯•ç‰ˆ xiaolin 123@ztgame   /home/xiaolin/banben/
 ./autostart
 
 
 https://vpn.ztgame.com <https://vpn.ztgame.com/> 
 
 
- ²âÊÔ 
+ æµ‹è¯• 
 
 /home/xiaolin/banben/release/sql/install.sql
 
 /home/xiaolin/banben/release/sql/update.sql
 
-ÖØĞÂÁ¬½ÓÊı¾İ¿â£º
+é‡æ–°è¿æ¥æ•°æ®åº“ï¼š
 1.vim config.xml
 2.mysql -h172.16.155.34 -uztgame -pirjryni51axR2oWJ
 
@@ -41,52 +41,52 @@ tail -f ~/log/scenesserver.log | grep XXX
 
 make ctags
 
-²é¿´coreÎÄ¼ş
+æŸ¥çœ‹coreæ–‡ä»¶
 ls -l core.*
 gdb -c core.15401 --se bin/SceneServer
 
-ÏûÏ¢ÔÚcommon/Cmd/branch0 ÏÂÃæ
+æ¶ˆæ¯åœ¨common/Cmd/branch0 ä¸‹é¢
 
-´úÂë¶ÔÆä
+ä»£ç å¯¹å…¶
 v =
 
-¸Ä±àÒë»·¾³
+æ”¹ç¼–è¯‘ç¯å¢ƒ
 vi ~/.bashrc
 
-//½Å±¾
+//è„šæœ¬
 grep lua ~/log/scenescript.log
 
-//±àÒëµÚÈı·½¿â µ±thirdpart±»ĞŞ¸Äºó
+//ç¼–è¯‘ç¬¬ä¸‰æ–¹åº“ å½“thirdpartè¢«ä¿®æ”¹å
 
-µ½Ö¸¶¨Â·¾¶
+åˆ°æŒ‡å®šè·¯å¾„
 cd ./thirdpart/src/fir/
 make clean
 make install -j10
 
-//ÏûÏ¢¿Í»§¶ËÖ±½Óµ½session
-common/Cmd/branch0/to_session_msg ÔÚÕâÀïÊÖ¶¯Ìí¼Ó
-//µ÷ÊÔ rm -rf common/Cmd/branch0/cmd_id.h
+//æ¶ˆæ¯å®¢æˆ·ç«¯ç›´æ¥åˆ°session
+common/Cmd/branch0/to_session_msg åœ¨è¿™é‡Œæ‰‹åŠ¨æ·»åŠ 
+//è°ƒè¯• rm -rf common/Cmd/branch0/cmd_id.h
 //make clean
 //make cmd_id
 
-Èç¹ûÍüÁËÉÏÒ»²½²¢ÇÒÒÑÌá½»
+å¦‚æœå¿˜äº†ä¸Šä¸€æ­¥å¹¶ä¸”å·²æäº¤
 
-ÔÙ´ÎÊÖ¶¯Ìí¼Óµ½to_session_msg
-»á³öÏÖÏûÏ¢ºÅÖØ¸´
-ÊÖ¶¯ĞŞ¸ÄÖØ¸´µÄÏûÏ¢ºÃ
+å†æ¬¡æ‰‹åŠ¨æ·»åŠ åˆ°to_session_msg
+ä¼šå‡ºç°æ¶ˆæ¯å·é‡å¤
+æ‰‹åŠ¨ä¿®æ”¹é‡å¤çš„æ¶ˆæ¯å¥½
 
 
-¸ü¸ÄÊı¾İ¿â ¸ü¸Äsql/update.sql
+æ›´æ”¹æ•°æ®åº“ æ›´æ”¹sql/update.sql
 
-//´ò±í
+//æ‰“è¡¨
 build_lua_cfg.bat
-Ö»Ìá½»ÒÑ¾­¹´Ñ¡µÄ
+åªæäº¤å·²ç»å‹¾é€‰çš„
 
 TimeTick
 
-½«ĞÂµÄÏûÏ¢´¦ÀíÌí¼Óµ½SessionServer Ìí¼ÓÃüÁîÅÉ·¢Àà
+å°†æ–°çš„æ¶ˆæ¯å¤„ç†æ·»åŠ åˆ°SessionServer æ·»åŠ å‘½ä»¤æ´¾å‘ç±»
 cmd_handle_manager.add_handle(FIR_NEW SocialCmdHandle())
 
-²¢ÇÒÓĞ¸öinitÔÚSessionService
+å¹¶ä¸”æœ‰ä¸ªinitåœ¨SessionService
 
 
