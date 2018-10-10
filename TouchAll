@@ -1,0 +1,5 @@
+#!/bin/bash
+
+make distclean
+find . -iname \* -exec touch \{\} \;
+make clean -j20
